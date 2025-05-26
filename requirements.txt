@@ -1,0 +1,20 @@
+# Core deep learning and tensor operations
+torch>=1.8.0 # Or a newer stable version
+torchvision>=0.9.0 # Or a newer stable version corresponding to your torch version
+
+# Image processing and data loading
+opencv-python>=4.0.0
+numpy>=1.19.0
+
+# Utilities and visualization (though matplotlib wasn't directly used in a cell, it's very common with these libs)
+matplotlib>=3.3.0
+tqdm>=4.50.0
+
+# Potentially for specific model parts or utilities if 'src' contains custom code relying on them
+# (These are more speculative without seeing the 'src' content)
+Pillow>=8.0.0 # Often a dependency of torchvision or used for image I/O
+scikit-learn # If any evaluation metrics or data utilities from here are used in 'src'
+pandas # If 'kaggle_submission.py' or other parts handle CSVs with pandas
+
+# Note: 'collections' and 'os', 'random', 'sys', 'math' are standard Python libraries
+# and do not need to be included in requirements.txt.
